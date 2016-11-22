@@ -1,6 +1,4 @@
 from abc import ABCMeta, abstractmethod
-import numpy
-import cv2
 
 
 class IMessageMorphing(object, metaclass=ABCMeta):
