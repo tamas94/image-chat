@@ -6,4 +6,4 @@
     but with the message hidden inside of it.
 
 <h4>Image Steganography Overview:</h4>
-    <a href=http://repository.root-me.org/St%C3%A9ganographie/EN%20-%20Image%20Steganography%20Overview.pdf />
+   (http://repository.root-me.org/St%C3%A9ganographie/EN%20-%20Image%20Steganography%20Overview.pdf)
