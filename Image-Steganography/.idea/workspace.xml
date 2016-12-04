@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae2791f4-9b53-493a-baca-46b6d260c63d" name="Default" comment="implemented LSB encryption &amp;&amp; decryption">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="ae2791f4-9b53-493a-baca-46b6d260c63d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="imageStega.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imageStega.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="256">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -63,14 +61,6 @@
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="czimbortibor &lt;czimbortibor@gmail.com&gt;" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MessageEncryption.py" root0="FORCE_HIGHLIGHTING" />
@@ -123,9 +113,6 @@
       </pane>
       <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.imageStega">
     <configuration default="false" name="MessageEncryption" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -311,28 +298,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ae2791f4-9b53-493a-baca-46b6d260c63d" name="Default" comment="" />
-      <created>1476779323597</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1476779323597</updated>
-    </task>
-    <task id="LOCAL-00001" summary="implemented LSB encryption &amp;&amp; decryption">
-      <created>1480885560524</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1480885560524</updated>
-    </task>
-    <task id="LOCAL-00002" summary="implemented LSB encryption &amp;&amp; decryption">
-      <created>1480885732442</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1480885732442</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -378,10 +343,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented LSB encryption &amp;&amp; decryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented LSB encryption &amp;&amp; decryption" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -542,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imageStega.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="256">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
