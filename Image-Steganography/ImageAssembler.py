@@ -16,7 +16,6 @@ class ImageAssembler(IImageMorphing.IImageMorphing):
         self.imageOperation()
 
     def imageOperation(self):
-        """ 2D list for the image parts """
         partsM = []
         for i in range(0, self.sizeOfM):
             partsM.append([])
