@@ -2,10 +2,11 @@ import IMessageMorphing
 
 
 class MessageDecryption(IMessageMorphing.IMessageMorphing):
-    def __init__(self, image, messageLen):
+    def __init__(self, image, messageLen, fileName):
         super().__init__()
         self.image = image
         self.messageLen = messageLen
+        self.fileName = fileName
 
         self.bytess = []
         self.message = self.messageOperation()

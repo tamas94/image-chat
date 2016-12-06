@@ -1,9 +1,14 @@
 .idea
-Image-Steganography/.idea/
 Image-Steganography/__pycache__/
 release/
+<<<<<<< HEAD
+images/
+=======
 TODO
 README.md
 LICENSE
 proj_terv_0.1.jpg
 Software-Requirements-0.1.PDF
+images/
+/Image-Steganography/images/
+>>>>>>> f8a21f503208f010dd0b59b44d33dffe9db40bc2

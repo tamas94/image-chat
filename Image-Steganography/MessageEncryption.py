@@ -1,13 +1,15 @@
 from IMessageMorphing import IMessageMorphing
 import numpy as np
 import cv2
+import imghdr
 
 
 class MessageEncryption(IMessageMorphing):
-    def __init__(self, message, image):
+    def __init__(self, message, image, fileName):
         super().__init__()
         self.message = message
         self.image = image
+        self.fileName = fileName
 
         self.messageOperation()
 
@@ -21,7 +23,14 @@ class MessageEncryption(IMessageMorphing):
             print("message does not fit in the image!")
             exit()
 
-        self.image = self.LSB()
+        """ determine the image format """
+        imageType = imghdr.what(self.fileName)
+        if imageType == "bmp" or imageType == "png" or imageType == "tiff":
+            self.image = self.LSB()
+        else:
+            if imageType == "jpeg" or imageType == "gif":
+                # TODO: implement the encryption for the lossy image formats
+                self.image = None
 
     def LSB(self):
         """ Least Significant Bit method for lossless image formats (e.g. BMP, PNG) """
