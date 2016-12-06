@@ -1,16 +1,25 @@
-from ImageAssembler import ImageAssembler
-from ImageSplitter import ImageSplitter
-from MessageEncryption import MessageEncryption
-from MessageDecryption import MessageDecryption
+import argparse
+import os
+
 import cv2
+
+from MessageDecryption import MessageDecryption
+from MessageEncryption import MessageEncryption
 
 
 class OpenCVException(Exception):
     pass
 
 
-def test():
-    fileName = "/home/czimbortibor/inputImage.bmp"
+def main():
+    args = parseArguments()
+    message = args.message
+    fileName = args.fileName
+    nrOfParts = args.nrOfParts
+
+    if args.fileName is None:
+        dirPath = os.getcwd()
+        fileName = os.path.join(dirPath, "images", "inputImage.png")
     image = cv2.imread(fileName)
     if image is not None:
         image = cv2.resize(image, (800, 600))
@@ -19,7 +28,6 @@ def test():
         raise OpenCVException("Not a valid image file!")
 
     '''
-    nrOfParts = 4
     imageSplitter = ImageSplitter(image, nrOfParts)
     parts = imageSplitter.getParts()
 
@@ -33,8 +41,8 @@ def test():
     print("original message: ", message)
     messageEncryptor = MessageEncryption(message, image, fileName)
     stegaImage = messageEncryptor.getImage()
-    #cv2.imshow("steganographed image", stegaImage)
-    #cv2.waitKey(0)
+    # cv2.imshow("steganographed image", stegaImage)
+    # cv2.waitKey(0)
 
     messageLen = len(message)
     if stegaImage is not None:
@@ -44,4 +52,16 @@ def test():
     else:
         raise NotImplementedError
 
-test()
+
+def parseArguments():
+    parser = argparse.ArgumentParser(description="Image steganography. Supply a text and an image and then the script "
+                                                 "will hide the text inside the image")
+    parser.add_argument("-t", "--text", help="the input text", dest="message", default="Hello")
+    parser.add_argument("-i", "--img", help="the input image", dest="fileName")
+    parser.add_argument("-nr", "--nr-of-parts", help="to how many parts should the script split the result image",
+                        dest="nrOfParts", default=4)
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    main()
