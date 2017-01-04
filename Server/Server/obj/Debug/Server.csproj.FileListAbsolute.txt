@@ -1,0 +1,6 @@
+C:\Users\Tamás\Desktop\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Tamás\Desktop\Server\Server\bin\Debug\Server.exe
+C:\Users\Tamás\Desktop\Server\Server\bin\Debug\Server.pdb
+C:\Users\Tamás\Desktop\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Tamás\Desktop\Server\Server\obj\Debug\Server.exe
+C:\Users\Tamás\Desktop\Server\Server\obj\Debug\Server.pdb
